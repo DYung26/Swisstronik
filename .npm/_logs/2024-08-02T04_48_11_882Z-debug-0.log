@@ -1,0 +1,629 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@9.2.0
+2 info using node@v18.19.1
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 5ms
+5 timing config:load:file:/usr/share/nodejs/npm/npmrc Completed in 5ms
+6 timing config:load:builtin Completed in 5ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:project Completed in 4ms
+10 timing config:load:file:/root/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 1ms
+14 timing config:load:setEnvs Completed in 3ms
+15 timing config:load Completed in 23ms
+16 timing npm:load:configload Completed in 23ms
+17 timing npm:load:mkdirpcache Completed in 1ms
+18 timing npm:load:mkdirplogs Completed in 1ms
+19 verbose title npm i @swisstronik/utils
+20 verbose argv "i" "@swisstronik/utils"
+21 timing npm:load:setTitle Completed in 3ms
+22 timing config:load:flatten Completed in 5ms
+23 timing npm:load:display Completed in 6ms
+24 verbose logfile logs-max:10 dir:/root/.npm/_logs/2024-08-02T04_48_11_882Z-
+25 verbose logfile /root/.npm/_logs/2024-08-02T04_48_11_882Z-debug-0.log
+26 timing npm:load:logFile Completed in 11ms
+27 timing npm:load:timers Completed in 1ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 48ms
+30 silly logfile done cleaning log files
+31 timing config:load:flatten Completed in 1ms
+32 timing arborist:ctor Completed in 2ms
+33 timing idealTree:init Completed in 714ms
+34 timing idealTree:userRequests Completed in 3ms
+35 silly idealTree buildDeps
+36 silly fetch manifest @swisstronik/utils@*
+37 timing arborist:ctor Completed in 0ms
+38 http fetch GET 200 https://registry.npmjs.org/@swisstronik%2futils 1288ms (cache miss)
+39 silly placeDep ROOT @swisstronik/utils@1.3.0 OK for:  want: *
+40 silly fetch manifest @noble/hashes@^1.3.0
+41 silly fetch manifest @oasisprotocol/deoxysii@0.0.5
+42 silly fetch manifest bech32@^2.0.0
+43 silly fetch manifest ethers@5.7.2
+44 silly fetch manifest rlp@^3.0.0
+45 http fetch GET 200 https://registry.npmjs.org/bech32 535ms (cache revalidated)
+46 http fetch GET 200 https://registry.npmjs.org/rlp 544ms (cache revalidated)
+47 http fetch GET 200 https://registry.npmjs.org/ethers 548ms (cache revalidated)
+48 http fetch GET 200 https://registry.npmjs.org/@noble%2fhashes 582ms (cache revalidated)
+49 http fetch GET 200 https://registry.npmjs.org/@oasisprotocol%2fdeoxysii 1107ms (cache miss)
+50 timing idealTree:#root Completed in 2413ms
+51 silly placeDep node_modules/@swisstronik/utils @noble/hashes@1.4.0 OK for: @swisstronik/utils@1.3.0 want: ^1.3.0
+52 silly placeDep ROOT @oasisprotocol/deoxysii@0.0.5 OK for: @swisstronik/utils@1.3.0 want: 0.0.5
+53 silly placeDep node_modules/@swisstronik/utils bech32@2.0.0 OK for: @swisstronik/utils@1.3.0 want: ^2.0.0
+54 silly placeDep node_modules/@swisstronik/utils ethers@5.7.2 OK for: @swisstronik/utils@1.3.0 want: 5.7.2
+55 silly placeDep node_modules/@swisstronik/utils rlp@3.0.0 OK for: @swisstronik/utils@1.3.0 want: ^3.0.0
+56 silly fetch manifest bsaes@0.0.2
+57 silly fetch manifest uint32@^0.2.1
+58 http fetch GET 200 https://registry.npmjs.org/bsaes 513ms (cache miss)
+59 http fetch GET 200 https://registry.npmjs.org/uint32 550ms (cache miss)
+60 timing idealTree:node_modules/@swisstronik/utils Completed in 571ms
+61 silly placeDep ROOT bsaes@0.0.2 OK for: @oasisprotocol/deoxysii@0.0.5 want: 0.0.2
+62 silly placeDep ROOT uint32@0.2.1 OK for: @oasisprotocol/deoxysii@0.0.5 want: ^0.2.1
+63 timing idealTree:node_modules/@oasisprotocol/deoxysii Completed in 8ms
+64 timing idealTree:node_modules/bsaes Completed in 0ms
+65 timing idealTree:node_modules/uint32 Completed in 0ms
+66 timing idealTree:node_modules/@swisstronik/utils/node_modules/@noble/hashes Completed in 0ms
+67 timing idealTree:node_modules/@swisstronik/utils/node_modules/bech32 Completed in 0ms
+68 timing idealTree:node_modules/@swisstronik/utils/node_modules/ethers Completed in 0ms
+69 timing idealTree:node_modules/@swisstronik/utils/node_modules/rlp Completed in 1ms
+70 timing idealTree:buildDeps Completed in 2996ms
+71 timing idealTree:fixDepFlags Completed in 26ms
+72 timing idealTree Completed in 3759ms
+73 timing reify:loadTrees Completed in 3761ms
+74 timing reify:diffTrees Completed in 17ms
+75 silly reify moves {}
+76 timing reify:retireShallow Completed in 3ms
+77 timing reify:createSparse Completed in 13ms
+78 timing reify:loadBundles Completed in 0ms
+79 silly audit bulk request {
+79 silly audit   '@adraffy/ens-normalize': [ '1.10.1' ],
+79 silly audit   '@cspotcode/source-map-support': [ '0.8.1' ],
+79 silly audit   '@ethereumjs/rlp': [ '4.0.1' ],
+79 silly audit   '@ethereumjs/util': [ '8.1.0' ],
+79 silly audit   '@noble/curves': [ '1.4.2', '1.2.0' ],
+79 silly audit   '@noble/hashes': [ '1.4.0', '1.3.2', '1.2.0' ],
+79 silly audit   '@scure/bip32': [ '1.4.0', '1.1.5' ],
+79 silly audit   '@scure/bip39': [ '1.3.0', '1.1.1' ],
+79 silly audit   'ethereum-cryptography': [ '2.2.1', '0.1.3', '1.2.0' ],
+79 silly audit   '@ethersproject/abi': [ '5.7.0' ],
+79 silly audit   '@ethersproject/abstract-provider': [ '5.7.0' ],
+79 silly audit   '@ethersproject/abstract-signer': [ '5.7.0' ],
+79 silly audit   '@ethersproject/address': [ '5.7.0', '5.6.1' ],
+79 silly audit   '@ethersproject/base64': [ '5.7.0' ],
+79 silly audit   '@ethersproject/basex': [ '5.7.0' ],
+79 silly audit   '@ethersproject/bignumber': [ '5.7.0' ],
+79 silly audit   '@ethersproject/bytes': [ '5.7.0' ],
+79 silly audit   '@ethersproject/constants': [ '5.7.0' ],
+79 silly audit   '@ethersproject/contracts': [ '5.7.0' ],
+79 silly audit   '@ethersproject/hash': [ '5.7.0' ],
+79 silly audit   '@ethersproject/hdnode': [ '5.7.0' ],
+79 silly audit   '@ethersproject/json-wallets': [ '5.7.0' ],
+79 silly audit   'aes-js': [ '3.0.0', '4.0.0-beta.5' ],
+79 silly audit   '@ethersproject/keccak256': [ '5.7.0' ],
+79 silly audit   '@ethersproject/logger': [ '5.7.0' ],
+79 silly audit   '@ethersproject/networks': [ '5.7.1' ],
+79 silly audit   '@ethersproject/pbkdf2': [ '5.7.0' ],
+79 silly audit   '@ethersproject/properties': [ '5.7.0' ],
+79 silly audit   '@ethersproject/providers': [ '5.7.2' ],
+79 silly audit   ws: [ '7.4.6', '8.17.1', '7.5.10' ],
+79 silly audit   '@ethersproject/random': [ '5.7.0' ],
+79 silly audit   '@ethersproject/rlp': [ '5.7.0' ],
+79 silly audit   '@ethersproject/sha2': [ '5.7.0' ],
+79 silly audit   '@ethersproject/signing-key': [ '5.7.0' ],
+79 silly audit   '@ethersproject/solidity': [ '5.7.0' ],
+79 silly audit   '@ethersproject/strings': [ '5.7.0' ],
+79 silly audit   '@ethersproject/transactions': [ '5.7.0' ],
+79 silly audit   '@ethersproject/units': [ '5.7.0' ],
+79 silly audit   '@ethersproject/wallet': [ '5.7.0' ],
+79 silly audit   '@ethersproject/web': [ '5.7.1' ],
+79 silly audit   '@ethersproject/wordlists': [ '5.7.0' ],
+79 silly audit   '@fastify/busboy': [ '2.1.1' ],
+79 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+79 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.0' ],
+79 silly audit   '@jridgewell/trace-mapping': [ '0.3.9' ],
+79 silly audit   '@metamask/eth-sig-util': [ '4.0.1' ],
+79 silly audit   '@noble/secp256k1': [ '1.7.1' ],
+79 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+79 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+79 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+79 silly audit   '@nomicfoundation/edr': [ '0.5.0' ],
+79 silly audit   '@nomicfoundation/edr-darwin-arm64': [ '0.5.0' ],
+79 silly audit   '@nomicfoundation/edr-darwin-x64': [ '0.5.0' ],
+79 silly audit   '@nomicfoundation/edr-linux-arm64-gnu': [ '0.5.0' ],
+79 silly audit   '@nomicfoundation/edr-linux-arm64-musl': [ '0.5.0' ],
+79 silly audit   '@nomicfoundation/edr-linux-x64-gnu': [ '0.5.0' ],
+79 silly audit   '@nomicfoundation/edr-linux-x64-musl': [ '0.5.0' ],
+79 silly audit   '@nomicfoundation/edr-win32-x64-msvc': [ '0.5.0' ],
+79 silly audit   '@nomicfoundation/ethereumjs-common': [ '4.0.4' ],
+79 silly audit   '@nomicfoundation/ethereumjs-rlp': [ '5.0.4' ],
+79 silly audit   '@nomicfoundation/ethereumjs-tx': [ '5.0.4' ],
+79 silly audit   '@nomicfoundation/ethereumjs-util': [ '9.0.4' ],
+79 silly audit   '@nomicfoundation/hardhat-chai-matchers': [ '2.0.7' ],
+79 silly audit   '@nomicfoundation/hardhat-ethers': [ '3.0.6' ],
+79 silly audit   '@nomicfoundation/hardhat-ignition': [ '0.15.5' ],
+79 silly audit   '@nomicfoundation/hardhat-ignition-ethers': [ '0.15.5' ],
+79 silly audit   'ansi-styles': [ '4.3.0', '3.2.1' ],
+79 silly audit   chalk: [ '4.1.2', '2.4.2' ],
+79 silly audit   'color-convert': [ '2.0.1', '1.9.3' ],
+79 silly audit   'color-name': [ '1.1.4', '1.1.3' ],
+79 silly audit   'fs-extra': [ '10.1.0', '9.1.0', '7.0.1', '8.1.0' ],
+79 silly audit   'has-flag': [ '4.0.0', '3.0.0', '1.0.0' ],
+79 silly audit   jsonfile: [ '6.1.0', '4.0.0' ],
+79 silly audit   'supports-color': [ '7.2.0', '8.1.1', '3.2.3', '5.5.0' ],
+79 silly audit   universalify: [ '2.0.1', '0.1.2' ],
+79 silly audit   '@nomicfoundation/hardhat-network-helpers': [ '1.0.11' ],
+79 silly audit   'ethereumjs-util': [ '7.1.5', '6.2.1' ],
+79 silly audit   '@nomicfoundation/hardhat-toolbox': [ '5.0.0' ],
+79 silly audit   '@nomicfoundation/hardhat-verify': [ '2.0.9' ],
+79 silly audit   '@nomicfoundation/ignition-core': [ '0.15.5' ],
+79 silly audit   cbor: [ '9.0.2', '8.1.0' ],
+79 silly audit   '@nomicfoundation/ignition-ui': [ '0.15.5' ],
+79 silly audit   '@nomicfoundation/solidity-analyzer': [ '0.1.2' ],
+79 silly audit   '@nomicfoundation/solidity-analyzer-darwin-arm64': [ '0.1.2' ],
+79 silly audit   '@nomicfoundation/solidity-analyzer-darwin-x64': [ '0.1.2' ],
+79 silly audit   '@nomicfoundation/solidity-analyzer-linux-arm64-gnu': [ '0.1.2' ],
+79 silly audit   '@nomicfoundation/solidity-analyzer-linux-arm64-musl': [ '0.1.2' ],
+79 silly audit   '@nomicfoundation/solidity-analyzer-linux-x64-gnu': [ '0.1.2' ],
+79 silly audit   '@nomicfoundation/solidity-analyzer-linux-x64-musl': [ '0.1.2' ],
+79 silly audit   '@nomicfoundation/solidity-analyzer-win32-x64-msvc': [ '0.1.2' ],
+79 silly audit   '@scure/base': [ '1.1.7' ],
+79 silly audit   '@sentry/core': [ '5.30.0' ],
+79 silly audit   '@sentry/hub': [ '5.30.0' ],
+79 silly audit   '@sentry/minimal': [ '5.30.0' ],
+79 silly audit   '@sentry/node': [ '5.30.0' ],
+79 silly audit   '@sentry/tracing': [ '5.30.0' ],
+79 silly audit   '@sentry/types': [ '5.30.0' ],
+79 silly audit   '@sentry/utils': [ '5.30.0' ],
+79 silly audit   '@solidity-parser/parser': [ '0.14.5', '0.18.0' ],
+79 silly audit   '@tsconfig/node10': [ '1.0.11' ],
+79 silly audit   '@tsconfig/node12': [ '1.0.11' ],
+79 silly audit   '@tsconfig/node14': [ '1.0.3' ],
+79 silly audit   '@tsconfig/node16': [ '1.0.4' ],
+79 silly audit   '@typechain/ethers-v6': [ '0.5.1' ],
+79 silly audit   '@typechain/hardhat': [ '9.1.0' ],
+79 silly audit   '@types/bn.js': [ '5.1.5', '4.11.6' ],
+79 silly audit   '@types/chai': [ '4.3.17' ],
+79 silly audit   '@types/chai-as-promised': [ '7.1.8' ],
+79 silly audit   '@types/concat-stream': [ '1.6.1' ],
+79 silly audit   '@types/form-data': [ '0.0.33' ],
+79 silly audit   '@types/glob': [ '7.2.0' ],
+79 silly audit   '@types/lru-cache': [ '5.1.1' ],
+79 silly audit   '@types/minimatch': [ '5.1.2' ],
+79 silly audit   '@types/mocha': [ '10.0.7' ],
+79 silly audit   '@types/node': [ '22.0.2', '18.15.13', '10.17.60', '8.10.66' ],
+79 silly audit   '@types/pbkdf2': [ '3.1.2' ],
+79 silly audit   '@types/prettier': [ '2.7.3' ],
+79 silly audit   '@types/qs': [ '6.9.15' ],
+79 silly audit   '@types/secp256k1': [ '4.0.6' ],
+79 silly audit   abbrev: [ '1.0.9' ],
+79 silly audit   acorn: [ '8.12.1' ],
+79 silly audit   'acorn-walk': [ '8.3.3' ],
+79 silly audit   'adm-zip': [ '0.4.16' ],
+79 silly audit   'agent-base': [ '6.0.2' ],
+79 silly audit   'aggregate-error': [ '3.1.0' ],
+79 silly audit   ajv: [ '8.17.1' ],
+79 silly audit   amdefine: [ '1.0.1' ],
+79 silly audit   'ansi-align': [ '3.0.1' ],
+79 silly audit   'ansi-colors': [ '4.1.3' ],
+79 silly audit   'ansi-escapes': [ '4.3.2' ],
+79 silly audit   'ansi-regex': [ '5.0.1', '3.0.1' ],
+79 silly audit   antlr4ts: [ '0.5.0-alpha.4' ],
+79 silly audit   anymatch: [ '3.1.3' ],
+79 silly audit   arg: [ '4.1.3' ],
+79 silly audit   argparse: [ '2.0.1', '1.0.10' ],
+79 silly audit   'array-back': [ '3.1.0', '4.0.2' ],
+79 silly audit   'array-union': [ '2.1.0' ],
+79 silly audit   'array-uniq': [ '1.0.3' ],
+79 silly audit   asap: [ '2.0.6' ],
+79 silly audit   'assertion-error': [ '1.1.0' ],
+79 silly audit   'astral-regex': [ '2.0.0' ],
+79 silly audit   async: [ '1.5.2' ],
+79 silly audit   asynckit: [ '0.4.0' ],
+79 silly audit   'at-least-node': [ '1.0.0' ],
+79 silly audit   axios: [ '1.7.3' ],
+79 silly audit   'balanced-match': [ '1.0.2' ],
+79 silly audit   'base-x': [ '3.0.10' ],
+79 silly audit   bech32: [ '1.1.4', '2.0.0' ],
+79 silly audit   'binary-extensions': [ '2.3.0' ],
+79 silly audit   blakejs: [ '1.2.1' ],
+79 silly audit   'bn.js': [ '5.2.1', '4.12.0', '4.11.6' ],
+79 silly audit   boxen: [ '5.1.2' ],
+79 silly audit   'type-fest': [ '0.20.2', '0.7.1', '0.21.3' ],
+79 silly audit   'brace-expansion': [ '1.1.11', '2.0.1' ],
+79 silly audit   braces: [ '3.0.3' ],
+79 silly audit   brorand: [ '1.1.0' ],
+79 silly audit   'browser-stdout': [ '1.3.1' ],
+79 silly audit   'browserify-aes': [ '1.2.0' ],
+79 silly audit   bs58: [ '4.0.1' ],
+79 silly audit   bs58check: [ '2.1.2' ],
+79 silly audit   'buffer-from': [ '1.1.2' ],
+79 silly audit   'buffer-xor': [ '1.0.3' ],
+79 silly audit   bytes: [ '3.1.2' ],
+79 silly audit   'call-bind': [ '1.0.7' ],
+79 silly audit   camelcase: [ '6.3.0' ],
+79 silly audit   caseless: [ '0.12.0' ],
+79 silly audit   chai: [ '4.5.0' ],
+79 silly audit   'chai-as-promised': [ '7.1.2' ],
+79 silly audit   charenc: [ '0.0.2' ],
+79 silly audit   'check-error': [ '1.0.3' ],
+79 silly audit   chokidar: [ '3.6.0' ],
+79 silly audit   'ci-info': [ '2.0.0' ],
+79 silly audit   'cipher-base': [ '1.0.4' ],
+79 silly audit   'clean-stack': [ '2.2.0' ],
+79 silly audit   'cli-boxes': [ '2.2.1' ],
+79 silly audit   'cli-table3': [ '0.5.1' ],
+79 silly audit   'is-fullwidth-code-point': [ '2.0.0', '3.0.0' ],
+79 silly audit   'string-width': [ '2.1.1', '4.2.3' ],
+79 silly audit   'strip-ansi': [ '4.0.0', '6.0.1' ],
+79 silly audit   cliui: [ '7.0.4' ],
+79 silly audit   colors: [ '1.4.0' ],
+79 silly audit   'combined-stream': [ '1.0.8' ],
+79 silly audit   'command-exists': [ '1.2.9' ],
+79 silly audit   'command-line-args': [ '5.2.1' ],
+79 silly audit   'command-line-usage': [ '6.1.3' ],
+79 silly audit   typical: [ '5.2.0', '4.0.0' ],
+79 silly audit   commander: [ '8.3.0' ],
+79 silly audit   'concat-map': [ '0.0.1' ],
+79 silly audit   'concat-stream': [ '1.6.2' ],
+79 silly audit   'readable-stream': [ '2.3.8', '3.6.2' ],
+79 silly audit   'safe-buffer': [ '5.1.2', '5.2.1' ],
+79 silly audit   string_decoder: [ '1.1.1', '1.3.0' ],
+79 silly audit   cookie: [ '0.4.2' ],
+79 silly audit   'core-util-is': [ '1.0.3' ],
+79 silly audit   'create-hash': [ '1.2.0' ],
+79 silly audit   'create-hmac': [ '1.1.7' ],
+79 silly audit   'create-require': [ '1.1.1' ],
+79 silly audit   crypt: [ '0.0.2' ],
+79 silly audit   death: [ '1.1.0' ],
+79 silly audit   debug: [ '4.3.6' ],
+79 silly audit   decamelize: [ '4.0.0' ],
+79 silly audit   'deep-eql': [ '4.1.4' ],
+79 silly audit   'deep-extend': [ '0.6.0' ],
+79 silly audit   'deep-is': [ '0.1.4' ],
+79 silly audit   'define-data-property': [ '1.1.4' ],
+79 silly audit   'delayed-stream': [ '1.0.0' ],
+79 silly audit   depd: [ '2.0.0' ],
+79 silly audit   diff: [ '5.2.0', '4.0.2' ],
+79 silly audit   difflib: [ '0.2.4' ],
+79 silly audit   'dir-glob': [ '3.0.1' ],
+79 silly audit   elliptic: [ '6.5.4' ],
+79 silly audit   'emoji-regex': [ '8.0.0' ],
+79 silly audit   enquirer: [ '2.4.1' ],
+79 silly audit   'env-paths': [ '2.2.1' ],
+79 silly audit   'es-define-property': [ '1.0.0' ],
+79 silly audit   'es-errors': [ '1.3.0' ],
+79 silly audit   escalade: [ '3.1.2' ],
+79 silly audit   'escape-string-regexp': [ '1.0.5', '4.0.0' ],
+79 silly audit   escodegen: [ '1.8.1' ],
+79 silly audit   'source-map': [ '0.2.0', '0.6.1' ],
+79 silly audit   esprima: [ '2.7.3', '4.0.1' ],
+79 silly audit   estraverse: [ '1.9.3' ],
+79 silly audit   esutils: [ '2.0.3' ],
+79 silly audit   'eth-gas-reporter': [ '0.2.27' ],
+79 silly audit   ethers: [ '5.7.2', '6.13.2' ],
+79 silly audit   'ethereum-bloom-filters': [ '1.2.0' ],
+79 silly audit   'ethereumjs-abi': [ '0.6.8' ],
+79 silly audit   tslib: [ '2.4.0', '1.14.1' ],
+79 silly audit   'ethjs-unit': [ '0.1.6' ],
+79 silly audit   'ethjs-util': [ '0.1.6' ],
+79 silly audit   evp_bytestokey: [ '1.0.3' ],
+79 silly audit   'fast-deep-equal': [ '3.1.3' ],
+79 silly audit   'fast-glob': [ '3.3.2' ],
+79 silly audit   'fast-levenshtein': [ '2.0.6' ],
+79 silly audit   'fast-uri': [ '3.0.1' ],
+79 silly audit   fastq: [ '1.17.1' ],
+79 silly audit   'fill-range': [ '7.1.1' ],
+79 silly audit   'find-replace': [ '3.0.0' ],
+79 silly audit   'find-up': [ '2.1.0', '5.0.0' ],
+79 silly audit   flat: [ '5.0.2' ],
+79 silly audit   'follow-redirects': [ '1.15.6' ],
+79 silly audit   'form-data': [ '4.0.0', '2.5.1' ],
+79 silly audit   'fp-ts': [ '1.19.3' ],
+79 silly audit   'fs-readdir-recursive': [ '1.1.0' ],
+79 silly audit   'fs.realpath': [ '1.0.0' ],
+79 silly audit   fsevents: [ '2.3.3' ],
+79 silly audit   'function-bind': [ '1.1.2' ],
+79 silly audit   'get-caller-file': [ '2.0.5' ],
+79 silly audit   'get-func-name': [ '2.0.2' ],
+79 silly audit   'get-intrinsic': [ '1.2.4' ],
+79 silly audit   'get-port': [ '3.2.0' ],
+79 silly audit   'ghost-testrpc': [ '0.0.2' ],
+79 silly audit   glob: [ '7.2.0', '8.1.0', '5.0.15', '7.1.7' ],
+79 silly audit   'glob-parent': [ '5.1.2' ],
+79 silly audit   'global-modules': [ '2.0.0' ],
+79 silly audit   'global-prefix': [ '3.0.0' ],
+79 silly audit   globby: [ '10.0.2' ],
+79 silly audit   gopd: [ '1.0.1' ],
+79 silly audit   'graceful-fs': [ '4.2.11' ],
+79 silly audit   handlebars: [ '4.7.8' ],
+79 silly audit   hardhat: [ '2.22.7' ],
+79 silly audit   'hardhat-gas-reporter': [ '1.0.10' ],
+79 silly audit   'has-property-descriptors': [ '1.0.2' ],
+79 silly audit   'has-proto': [ '1.0.3' ],
+79 silly audit   'has-symbols': [ '1.0.3' ],
+79 silly audit   'hash-base': [ '3.1.0' ],
+79 silly audit   'hash.js': [ '1.1.7' ],
+79 silly audit   hasown: [ '2.0.2' ],
+79 silly audit   he: [ '1.2.0' ],
+79 silly audit   heap: [ '0.2.7' ],
+79 silly audit   'hmac-drbg': [ '1.0.1' ],
+79 silly audit   'http-basic': [ '8.1.3' ],
+79 silly audit   'http-errors': [ '2.0.0' ],
+79 silly audit   'http-response-object': [ '3.0.2' ],
+79 silly audit   'https-proxy-agent': [ '5.0.1' ],
+79 silly audit   'iconv-lite': [ '0.4.24' ],
+79 silly audit   ignore: [ '5.3.1' ],
+79 silly audit   immer: [ '10.0.2' ],
+79 silly audit   immutable: [ '4.3.7' ],
+79 silly audit   'indent-string': [ '4.0.0' ],
+79 silly audit   inflight: [ '1.0.6' ],
+79 silly audit   inherits: [ '2.0.4' ],
+79 silly audit   ini: [ '1.3.8' ],
+79 silly audit   interpret: [ '1.4.0' ],
+79 silly audit   'io-ts': [ '1.10.4' ],
+79 silly audit   'is-binary-path': [ '2.1.0' ],
+79 silly audit   'is-extglob': [ '2.1.1' ],
+79 silly audit   'is-glob': [ '4.0.3' ],
+79 silly audit   'is-hex-prefixed': [ '1.0.0' ],
+79 silly audit   'is-number': [ '7.0.0' ],
+79 silly audit   'is-plain-obj': [ '2.1.0' ],
+79 silly audit   'is-unicode-supported': [ '0.1.0' ],
+79 silly audit   isarray: [ '1.0.0' ],
+79 silly audit   isexe: [ '2.0.0' ],
+79 silly audit   'js-sha3': [ '0.8.0' ],
+79 silly audit   'js-yaml': [ '4.1.0', '3.14.1' ],
+79 silly audit   'json-schema-traverse': [ '1.0.0' ],
+79 silly audit   'json-stringify-safe': [ '5.0.1' ],
+79 silly audit   jsonschema: [ '1.4.1' ],
+79 silly audit   keccak: [ '3.0.4' ],
+79 silly audit   'kind-of': [ '6.0.3' ],
+79 silly audit   kleur: [ '3.0.3' ],
+79 silly audit   levn: [ '0.3.0' ],
+79 silly audit   'locate-path': [ '2.0.0', '6.0.0' ],
+79 silly audit   lodash: [ '4.17.21' ],
+79 silly audit   'lodash.camelcase': [ '4.3.0' ],
+79 silly audit   'lodash.clonedeep': [ '4.5.0' ],
+79 silly audit   'lodash.isequal': [ '4.5.0' ],
+79 silly audit   'lodash.truncate': [ '4.4.2' ],
+79 silly audit   'log-symbols': [ '4.1.0' ],
+79 silly audit   loupe: [ '2.3.7' ],
+79 silly audit   lru_map: [ '0.3.3' ],
+79 silly audit   'make-error': [ '1.3.6' ],
+79 silly audit   'markdown-table': [ '1.1.3' ],
+79 silly audit   'md5.js': [ '1.3.5' ],
+79 silly audit   memorystream: [ '0.3.1' ],
+79 silly audit   merge2: [ '1.4.1' ],
+79 silly audit   'micro-ftch': [ '0.3.1' ],
+79 silly audit   micromatch: [ '4.0.7' ],
+79 silly audit   'mime-db': [ '1.52.0' ],
+79 silly audit   'mime-types': [ '2.1.35' ],
+79 silly audit   'minimalistic-assert': [ '1.0.1' ],
+79 silly audit   'minimalistic-crypto-utils': [ '1.0.1' ],
+79 silly audit   minimatch: [ '3.1.2', '5.1.6' ],
+79 silly audit   minimist: [ '1.2.8' ],
+79 silly audit   mkdirp: [ '0.5.6', '1.0.4' ],
+79 silly audit   mnemonist: [ '0.38.5' ],
+79 silly audit   mocha: [ '10.7.0' ],
+79 silly audit   ms: [ '2.1.3', '2.1.2' ],
+79 silly audit   'p-limit': [ '3.1.0', '1.3.0' ],
+79 silly audit   'p-locate': [ '5.0.0', '2.0.0' ],
+79 silly audit   'path-exists': [ '4.0.0', '3.0.0' ],
+79 silly audit   ndjson: [ '2.0.0' ],
+79 silly audit   'neo-async': [ '2.6.2' ],
+79 silly audit   'node-addon-api': [ '2.0.2' ],
+79 silly audit   'node-emoji': [ '1.11.0' ],
+79 silly audit   'node-gyp-build': [ '4.8.1' ],
+79 silly audit   nofilter: [ '3.1.0' ],
+79 silly audit   nopt: [ '3.0.6' ],
+79 silly audit   'normalize-path': [ '3.0.0' ],
+79 silly audit   'number-to-bn': [ '1.7.0' ],
+79 silly audit   'object-assign': [ '4.1.1' ],
+79 silly audit   'object-inspect': [ '1.13.2' ],
+79 silly audit   obliterator: [ '2.0.4' ],
+79 silly audit   once: [ '1.4.0' ],
+79 silly audit   optionator: [ '0.8.3' ],
+79 silly audit   ordinal: [ '1.0.3' ],
+79 silly audit   'os-tmpdir': [ '1.0.2' ],
+79 silly audit   'p-map': [ '4.0.0' ],
+79 silly audit   'p-try': [ '1.0.0' ],
+79 silly audit   'parse-cache-control': [ '1.0.1' ],
+79 silly audit   'path-is-absolute': [ '1.0.1' ],
+79 silly audit   'path-parse': [ '1.0.7' ],
+79 silly audit   'path-type': [ '4.0.0' ],
+79 silly audit   pathval: [ '1.1.1' ],
+79 silly audit   pbkdf2: [ '3.1.2' ],
+79 silly audit   picomatch: [ '2.3.1' ],
+79 silly audit   pify: [ '4.0.1' ],
+79 silly audit   'prelude-ls': [ '1.1.2' ],
+79 silly audit   prettier: [ '2.8.8' ],
+79 silly audit   'process-nextick-args': [ '2.0.1' ],
+79 silly audit   promise: [ '8.3.0' ],
+79 silly audit   prompts: [ '2.4.2' ],
+79 silly audit   'proxy-from-env': [ '1.1.0' ],
+79 silly audit   qs: [ '6.13.0' ],
+79 silly audit   'queue-microtask': [ '1.2.3' ],
+79 silly audit   randombytes: [ '2.1.0' ],
+79 silly audit   'raw-body': [ '2.5.2' ],
+79 silly audit   readdirp: [ '3.6.0' ],
+79 silly audit   rechoir: [ '0.6.2' ],
+79 silly audit   'recursive-readdir': [ '2.2.3' ],
+79 silly audit   'reduce-flatten': [ '2.0.0' ],
+79 silly audit   'req-cwd': [ '2.0.0' ],
+79 silly audit   'req-from': [ '2.0.0' ],
+79 silly audit   'require-directory': [ '2.1.1' ],
+79 silly audit   'require-from-string': [ '2.0.2' ],
+79 silly audit   resolve: [ '1.17.0', '1.1.7' ],
+79 silly audit   'resolve-from': [ '3.0.0' ],
+79 silly audit   reusify: [ '1.0.4' ],
+79 silly audit   ripemd160: [ '2.0.2' ],
+79 silly audit   rlp: [ '2.2.7', '3.0.0' ],
+79 silly audit   'run-parallel': [ '1.2.0' ],
+79 silly audit   'safer-buffer': [ '2.1.2' ],
+79 silly audit   'sc-istanbul': [ '0.4.6' ],
+79 silly audit   'scrypt-js': [ '3.0.1' ],
+79 silly audit   secp256k1: [ '4.0.3' ],
+79 silly audit   semver: [ '6.3.1', '5.7.2', '7.6.3' ],
+79 silly audit   'serialize-javascript': [ '6.0.2' ],
+79 silly audit   'set-function-length': [ '1.2.2' ],
+79 silly audit   setimmediate: [ '1.0.5' ],
+79 silly audit   setprototypeof: [ '1.2.0' ],
+79 silly audit   'sha.js': [ '2.4.11' ],
+79 silly audit   sha1: [ '1.1.1' ],
+79 silly audit   shelljs: [ '0.8.5' ],
+79 silly audit   'side-channel': [ '1.0.6' ],
+79 silly audit   sisteransi: [ '1.0.5' ],
+79 silly audit   slash: [ '3.0.0' ],
+79 silly audit   'slice-ansi': [ '4.0.0' ],
+79 silly audit   solc: [ '0.8.26' ],
+79 silly audit   'solidity-coverage': [ '0.8.12' ],
+79 silly audit   'source-map-support': [ '0.5.21' ],
+79 silly audit   split2: [ '3.2.2' ],
+79 silly audit   'sprintf-js': [ '1.0.3' ],
+79 silly audit   'stacktrace-parser': [ '0.1.10' ],
+79 silly audit   statuses: [ '2.0.1' ],
+79 silly audit   'string-format': [ '2.0.0' ],
+79 silly audit   'strip-hex-prefix': [ '1.0.0' ],
+79 silly audit   'strip-json-comments': [ '3.1.1' ],
+79 silly audit   'sync-request': [ '6.1.0' ],
+79 silly audit   'sync-rpc': [ '1.3.6' ],
+79 silly audit   table: [ '6.8.2' ],
+79 silly audit   'table-layout': [ '1.0.2' ],
+79 silly audit   'then-request': [ '6.0.2' ],
+79 silly audit   through2: [ '4.0.2' ],
+79 silly audit   tmp: [ '0.0.33' ],
+79 silly audit   'to-regex-range': [ '5.0.1' ],
+79 silly audit   toidentifier: [ '1.0.1' ],
+79 silly audit   'ts-command-line-args': [ '2.5.1' ],
+79 silly audit   'ts-essentials': [ '7.0.3' ],
+79 silly audit   'ts-node': [ '10.9.2' ],
+79 silly audit   tsort: [ '0.0.1' ],
+79 silly audit   tweetnacl: [ '1.0.3' ],
+79 silly audit   'tweetnacl-util': [ '0.15.1' ],
+79 silly audit   'type-check': [ '0.3.2' ],
+79 silly audit   'type-detect': [ '4.1.0' ],
+79 silly audit   typechain: [ '8.3.2' ],
+79 silly audit   typedarray: [ '0.0.6' ],
+79 silly audit   typescript: [ '5.5.4' ],
+79 silly audit   'uglify-js': [ '3.19.1' ],
+79 silly audit   undici: [ '5.28.4' ],
+79 silly audit   'undici-types': [ '6.11.1' ],
+79 silly audit   unpipe: [ '1.0.0' ],
+79 silly audit   utf8: [ '3.0.0' ],
+79 silly audit   'util-deprecate': [ '1.0.2' ],
+79 silly audit   uuid: [ '8.3.2' ],
+79 silly audit   'v8-compile-cache-lib': [ '3.0.1' ],
+79 silly audit   'web3-utils': [ '1.10.4' ],
+79 silly audit   which: [ '1.3.1' ],
+79 silly audit   'widest-line': [ '3.1.0' ],
+79 silly audit   'word-wrap': [ '1.2.5' ],
+79 silly audit   wordwrap: [ '1.0.0' ],
+79 silly audit   wordwrapjs: [ '4.0.1' ],
+79 silly audit   workerpool: [ '6.5.1' ],
+79 silly audit   'wrap-ansi': [ '7.0.0' ],
+79 silly audit   wrappy: [ '1.0.2' ],
+79 silly audit   y18n: [ '5.0.8' ],
+79 silly audit   yargs: [ '16.2.0' ],
+79 silly audit   'yargs-parser': [ '20.2.9' ],
+79 silly audit   'yargs-unparser': [ '2.0.0' ],
+79 silly audit   yn: [ '3.1.1' ],
+79 silly audit   'yocto-queue': [ '0.1.0' ],
+79 silly audit   '@swisstronik/utils': [ '1.3.0' ],
+79 silly audit   '@oasisprotocol/deoxysii': [ '0.0.5' ],
+79 silly audit   bsaes: [ '0.0.2' ],
+79 silly audit   uint32: [ '0.2.1' ]
+79 silly audit }
+80 verbose reify failed optional dependency /root/node_modules/fsevents
+81 silly reify mark deleted [ '/root/node_modules/fsevents' ]
+82 timing reifyNode:node_modules/fsevents Completed in 11ms
+83 silly tarball no local data for uint32@https://registry.npmjs.org/uint32/-/uint32-0.2.1.tgz. Extracting by manifest.
+84 silly tarball no local data for bsaes@https://registry.npmjs.org/bsaes/-/bsaes-0.0.2.tgz. Extracting by manifest.
+85 silly tarball no local data for @oasisprotocol/deoxysii@https://registry.npmjs.org/@oasisprotocol/deoxysii/-/deoxysii-0.0.5.tgz. Extracting by manifest.
+86 silly tarball no local data for @swisstronik/utils@https://registry.npmjs.org/@swisstronik/utils/-/utils-1.3.0.tgz. Extracting by manifest.
+87 silly tarball no local data for rlp@https://registry.npmjs.org/rlp/-/rlp-3.0.0.tgz. Extracting by manifest.
+88 silly tarball no local data for bech32@https://registry.npmjs.org/bech32/-/bech32-2.0.0.tgz. Extracting by manifest.
+89 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 234ms
+90 timing auditReport:getReport Completed in 247ms
+91 silly audit report {
+91 silly audit report   ws: [
+91 silly audit report     {
+91 silly audit report       id: 1097616,
+91 silly audit report       url: 'https://github.com/advisories/GHSA-3h5v-q93c-6h6q',
+91 silly audit report       title: 'ws affected by a DoS when handling a request with many HTTP headers',
+91 silly audit report       severity: 'high',
+91 silly audit report       vulnerable_versions: '>=7.0.0 <7.5.10',
+91 silly audit report       cwe: [Array],
+91 silly audit report       cvss: [Object]
+91 silly audit report     }
+91 silly audit report   ]
+91 silly audit report }
+92 timing metavuln:cache:get:security-advisory:ws:emzRmp6/nc7AwAcIsLbFQ+0L4qzlgxF4MKekphfxEfwpw1dxuZTN8N1jB09nodJX0qVyYUcWJ0fOvqilR5G6EQ== Completed in 37ms
+93 http fetch GET 200 https://registry.npmjs.org/uint32/-/uint32-0.2.1.tgz 275ms (cache miss)
+94 timing reifyNode:node_modules/uint32 Completed in 300ms
+95 http fetch GET 200 https://registry.npmjs.org/bech32/-/bech32-2.0.0.tgz 275ms (cache miss)
+96 timing reifyNode:node_modules/@swisstronik/utils/node_modules/bech32 Completed in 315ms
+97 http fetch GET 200 https://registry.npmjs.org/bsaes/-/bsaes-0.0.2.tgz 315ms (cache miss)
+98 timing reifyNode:node_modules/bsaes Completed in 343ms
+99 http fetch GET 200 https://registry.npmjs.org/rlp/-/rlp-3.0.0.tgz 318ms (cache miss)
+100 timing reifyNode:node_modules/@swisstronik/utils/node_modules/rlp Completed in 354ms
+101 http fetch GET 200 https://registry.npmjs.org/ws 121ms (cache revalidated)
+102 timing metavuln:packument:ws Completed in 125ms
+103 timing metavuln:load:security-advisory:ws:1097616 Completed in 2ms
+104 timing metavuln:calculate:security-advisory:ws:1097616 Completed in 128ms
+105 timing metavuln:cache:get:security-advisory:@ethersproject/providers:Dt6K3BRvlmmP1+1GiHpkKUk2ZJqnd/RsXlNRSR/sipV/ZiiRj9AED3C/tqoDsUSqbB4RXtQMDE7X1obNP3UyHw== Completed in 7ms
+106 timing reifyNode:node_modules/@swisstronik/utils/node_modules/@noble/hashes Completed in 434ms
+107 timing reifyNode:node_modules/@swisstronik/utils/node_modules/ethers Completed in 501ms
+108 http fetch GET 200 https://registry.npmjs.org/@oasisprotocol/deoxysii/-/deoxysii-0.0.5.tgz 596ms (cache miss)
+109 timing reifyNode:node_modules/@oasisprotocol/deoxysii Completed in 627ms
+110 http fetch GET 200 https://registry.npmjs.org/@swisstronik/utils/-/utils-1.3.0.tgz 632ms (cache miss)
+111 timing reifyNode:node_modules/@swisstronik/utils Completed in 665ms
+112 timing reify:unpack Completed in 666ms
+113 timing reify:unretire Completed in 0ms
+114 timing build:queue Completed in 7ms
+115 timing build:link:node_modules/@swisstronik/utils/node_modules/rlp Completed in 3ms
+116 timing build:link Completed in 4ms
+117 timing build:deps Completed in 13ms
+118 timing build Completed in 13ms
+119 timing reify:build Completed in 14ms
+120 timing reify:trash Completed in 1ms
+121 timing reify:save Completed in 219ms
+122 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fproviders 987ms (cache revalidated)
+123 timing metavuln:packument:@ethersproject/providers Completed in 991ms
+124 timing metavuln:load:security-advisory:@ethersproject/providers:emzRmp6/nc7AwAcIsLbFQ+0L4qzlgxF4MKekphfxEfwpw1dxuZTN8N1jB09nodJX0qVyYUcWJ0fOvqilR5G6EQ== Completed in 2ms
+125 timing metavuln:calculate:security-advisory:@ethersproject/providers:emzRmp6/nc7AwAcIsLbFQ+0L4qzlgxF4MKekphfxEfwpw1dxuZTN8N1jB09nodJX0qVyYUcWJ0fOvqilR5G6EQ== Completed in 993ms
+126 timing metavuln:packument:ethers Completed in 0ms
+127 timing metavuln:cache:get:security-advisory:ethers:1TdrOXOk0ccI18UzwW2T2+gY4xlkWEPN8Dnm6kUUESAQqBuODFZZXA0Hon+Wx/+SC1tqpJ4npaqgIcL70+vhew== Completed in 3ms
+128 timing metavuln:load:security-advisory:ethers:Dt6K3BRvlmmP1+1GiHpkKUk2ZJqnd/RsXlNRSR/sipV/ZiiRj9AED3C/tqoDsUSqbB4RXtQMDE7X1obNP3UyHw== Completed in 2ms
+129 timing metavuln:calculate:security-advisory:ethers:Dt6K3BRvlmmP1+1GiHpkKUk2ZJqnd/RsXlNRSR/sipV/ZiiRj9AED3C/tqoDsUSqbB4RXtQMDE7X1obNP3UyHw== Completed in 6ms
+130 timing metavuln:packument:@swisstronik/utils Completed in 1ms
+131 timing metavuln:cache:get:security-advisory:@swisstronik/utils:pZ87q44UaaO69S72fs28wgjWwTRex8e+7Z2gRekq6S1H3ahjTd3oCYpOc75axgsn4H5HUqY5Alw7sxCiuSQfYA== Completed in 1ms
+132 timing metavuln:load:security-advisory:@swisstronik/utils:1TdrOXOk0ccI18UzwW2T2+gY4xlkWEPN8Dnm6kUUESAQqBuODFZZXA0Hon+Wx/+SC1tqpJ4npaqgIcL70+vhew== Completed in 13ms
+133 timing metavuln:cache:get:security-advisory:eth-gas-reporter:jKPmo9IpD3hZcoCi5CfJShEoDUVYI0Rm9UPVWO2B15lrXCxAOHgyVKK7eO/GyI+mvMMLgqTrazBngirnyMA+iA== Completed in 20ms
+134 timing metavuln:cache:put:security-advisory:@swisstronik/utils:pZ87q44UaaO69S72fs28wgjWwTRex8e+7Z2gRekq6S1H3ahjTd3oCYpOc75axgsn4H5HUqY5Alw7sxCiuSQfYA== Completed in 6ms
+135 timing metavuln:calculate:security-advisory:@swisstronik/utils:1TdrOXOk0ccI18UzwW2T2+gY4xlkWEPN8Dnm6kUUESAQqBuODFZZXA0Hon+Wx/+SC1tqpJ4npaqgIcL70+vhew== Completed in 21ms
+136 http fetch GET 200 https://registry.npmjs.org/eth-gas-reporter 59ms (cache revalidated)
+137 timing metavuln:packument:eth-gas-reporter Completed in 60ms
+138 timing metavuln:load:security-advisory:eth-gas-reporter:1TdrOXOk0ccI18UzwW2T2+gY4xlkWEPN8Dnm6kUUESAQqBuODFZZXA0Hon+Wx/+SC1tqpJ4npaqgIcL70+vhew== Completed in 0ms
+139 timing metavuln:calculate:security-advisory:eth-gas-reporter:1TdrOXOk0ccI18UzwW2T2+gY4xlkWEPN8Dnm6kUUESAQqBuODFZZXA0Hon+Wx/+SC1tqpJ4npaqgIcL70+vhew== Completed in 60ms
+140 timing metavuln:cache:get:security-advisory:hardhat-gas-reporter:sygpZ3bl69wkc5RZGyPmfdvZSZhBTECowq0DJ5U4GR8+yWS4Eapk97Kivh+gKb9CaS8K5nY2QWhUoJDCA8jXKg== Completed in 2ms
+141 http fetch GET 200 https://registry.npmjs.org/hardhat-gas-reporter 36ms (cache revalidated)
+142 timing metavuln:packument:hardhat-gas-reporter Completed in 37ms
+143 timing metavuln:load:security-advisory:hardhat-gas-reporter:jKPmo9IpD3hZcoCi5CfJShEoDUVYI0Rm9UPVWO2B15lrXCxAOHgyVKK7eO/GyI+mvMMLgqTrazBngirnyMA+iA== Completed in 0ms
+144 timing metavuln:calculate:security-advisory:hardhat-gas-reporter:jKPmo9IpD3hZcoCi5CfJShEoDUVYI0Rm9UPVWO2B15lrXCxAOHgyVKK7eO/GyI+mvMMLgqTrazBngirnyMA+iA== Completed in 38ms
+145 timing auditReport:init Completed in 1230ms
+146 timing reify:audit Completed in 1479ms
+147 timing reify Completed in 5280ms
+148 silly ADD node_modules/uint32
+149 silly ADD node_modules/bsaes
+150 silly ADD node_modules/@oasisprotocol/deoxysii
+151 silly ADD node_modules/@swisstronik/utils
+152 silly ADD node_modules/@swisstronik/utils/node_modules/rlp
+153 silly ADD node_modules/@swisstronik/utils/node_modules/ethers
+154 silly ADD node_modules/@swisstronik/utils/node_modules/bech32
+155 silly ADD node_modules/@swisstronik/utils/node_modules/@noble/hashes
+156 silly ADD
+157 timing command:i Completed in 5317ms
+158 verbose exit 0
+159 timing npm Completed in 5399ms
+160 info ok
